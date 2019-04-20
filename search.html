@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Поиск отелей в Седоне</title><!--Поиск отелей в Седоне -->
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic,latin" type="text/css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <div class="container wrapper">
+      <header class="main-header">
+        <nav class="main-navigation">
+          <ul>
+            <li>
+              <a href="#">Информация</a>
+            </li>
+            <li>
+              <a href="#">Фото и видео</a>
+            </li>
+            <li class="logo">
+              <img src="img/logo.png" width="138" height="70" alt="Седона">
+            </li>
+            <li>
+              <a href="#">Карта штата</a>
+            </li>
+            <li>
+              <a href="../sedona/hotels.html">Гостиницы</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <div class="container inner-page">
+        <div class="inner-page-title">
+           <h1>Поиск гостиницы в Седоне</h1>
+           <p>Укажите предполагаемые даты поездки и мы покажем Вам лучшие предложения гостиниц в Седоне </p>
+        </div>
+      <div class="modal-content  modal-content-inner-page">
+        <form class="modal-search-form" action="../sedona/hotels.html" method="get">
+          <fieldset>
+           <label  for="arrival">Дата заезда:</label>
+           <input type="text" name="arrival" id="arrival" value="24 апреля 2014">
+           <button class="btn-icon btn-calendar" formaction="#"><i class="icon-calendar"></i></button>
+         </fieldset>
+         <fieldset>
+           <label for="depart">Дата выезда:</label>
+           <input type="text" name="date-depart" id="depart" value="4 июля 2014">
+           <button class="btn-icon btn-calendar" formaction="#"><i class="icon-calendar"></i></button>
+         </fieldset>
+         <fieldset class="search-form-count">
+           <label for="adult-count">Взрослые:</label>
+           <button class="btn-icon btn-minus" formaction="#"><i class="icon-minus"></i></button>
+           <input type="text" name="adult-count" id="adult-count" value="2">
+           <button class="btn-icon btn-plus" formaction="#"><i class="icon-plus"></i></button>
+           <label for="child-count">Дети:</label>
+           <button class="btn-icon btn-minus" formaction="#"><i class="icon-minus"></i></button>
+           <input type="text" name="child-count" id="child-count" value="0">
+           <button class="btn-icon btn-plus" formaction="#"><i class="icon-plus"></i></button>
+         </fieldset>
+         <button class="search-form-btn" type="submit" value="Найти">Найти</button>
+       </form>
+     </div>
+    </div>
+      <footer class="main-footer main-footer-hotels clearfix">
+        <section class="footer-hashtag">
+          <p>#Visitsedona</p>
+        </section>
+        <section class="footer-social">
+          <a href="#" class="social-btn social-btn-twitter">Твиттер
+             <i class="icon icon-twitter"></i>
+          </a>
+          <a href="#" class="social-btn social-btn-fb" tabindex="1">Фейсбук
+            <i class="icon icon-facebook"></i>
+         </a>
+          <a href="#" class="social-btn social-btn-youtube">Youtube
+            <i class="icon icon-youtube"></i>
+         </a>
+       </section>
+       <section class="footer-copyright">
+         <span>WEBSITE by</span>
+         <a href="https://htmlacademy.ru/" target="_blank"></a>
+       </section>
+      </footer>
+     </div>
+   </body>
+ </html>
